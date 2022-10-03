@@ -12,6 +12,9 @@
 .d-flex {
   display: flex;
 }
+.flex-1 {
+  flex: 1;
+}
 .align-center {
   align-items: center;
 }
@@ -24,7 +27,7 @@
 .space-evenly {
   justify-content: space-evenly;
 }
-.content-center{
+.content-center {
   justify-content: center;
 }
 .d-grid {
@@ -152,7 +155,7 @@
 .c-grey {
   color: var(---grey-color);
 }
-.bold{
+.bold {
   font-weight: bold;
 }
 @media (max-width: 767px) {

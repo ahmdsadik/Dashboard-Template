@@ -397,7 +397,7 @@ body {
 }
 
 /* End Yearly Targets Widget */
-/* Start Tickets Statistics */
+/* Start Tickets Statistics Widget*/
 .tickets-statistics {
 }
 .tickets-statistics .statistics {
@@ -409,16 +409,45 @@ body {
 .tickets-statistics .statistics .statistic i {
   font-size: 25px;
 }
-.tickets-statistics .statistics .statistic:nth-of-type(1) i{
-color: var(--orange-color);
+.tickets-statistics .statistics .statistic:nth-of-type(1) i {
+  color: var(--orange-color);
 }
-.tickets-statistics .statistics .statistic:nth-of-type(2) i{
-color: var(--blue-color);
+.tickets-statistics .statistics .statistic:nth-of-type(2) i {
+  color: var(--blue-alt-color);
 }
-.tickets-statistics .statistics .statistic:nth-of-type(3) i{
-color:var(--green-color);
+.tickets-statistics .statistics .statistic:nth-of-type(3) i {
+  color: var(--green-color);
 }
-.tickets-statistics .statistics .statistic:nth-of-type(4) i{
-color: var(--red-color);
+.tickets-statistics .statistics .statistic:nth-of-type(4) i {
+  color: var(--red-color);
 }
-/* End Tickets Statistics */
+/* End Tickets Statistics Widget*/
+/* Start Latest News Widget */
+.latest-new {
+}
+.latest-news .new:not(:last-child) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+@media (max-width: 767px) {
+  .latest-news .new,
+  .latest-news .new .content {
+    flex-direction: column;
+  }
+}
+.latest-news .new img {
+  width: 100px;
+}
+@media (max-width: 767px) {
+  .latest-news .new img {
+    width: 100%;
+  }
+  .latest-news .new .info {
+    margin-bottom: 20px;
+  }
+}
+.latest-news .new > span {
+  text-align: center;
+  padding: 5px 10px;
+}
+/* End Latest News Widget */
