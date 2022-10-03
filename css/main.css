@@ -397,3 +397,28 @@ body {
 }
 
 /* End Yearly Targets Widget */
+/* Start Tickets Statistics */
+.tickets-statistics {
+}
+.tickets-statistics .statistics {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.tickets-statistics .statistics .statistic {
+  /* text-align: center; */
+}
+.tickets-statistics .statistics .statistic i {
+  font-size: 25px;
+}
+.tickets-statistics .statistics .statistic:nth-of-type(1) i{
+color: var(--orange-color);
+}
+.tickets-statistics .statistics .statistic:nth-of-type(2) i{
+color: var(--blue-color);
+}
+.tickets-statistics .statistics .statistic:nth-of-type(3) i{
+color:var(--green-color);
+}
+.tickets-statistics .statistics .statistic:nth-of-type(4) i{
+color: var(--red-color);
+}
+/* End Tickets Statistics */
