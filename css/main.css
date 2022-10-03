@@ -452,9 +452,7 @@ body {
   padding: 5px 10px;
 }
 /* End Latest News Widget */
-/* Start Lastest Tasks Widget */
-.lastest-tasks {
-}
+/* Start Latest Tasks Widget */
 .lastest-tasks .task:not(:last-child) {
   padding-bottom: 20px;
   border-bottom: 1px solid #ccc;
@@ -476,4 +474,13 @@ body {
     margin-top: 20px;
   }
 }
-/* End Lastest Tasks Widget */
+/* End Latest Tasks Widget */
+/*  */
+.top-search-items {
+}
+.top-search-items {
+}
+.top-search-items .data .count {
+  /* padding: 5px 10px; */
+}
+/*  */
