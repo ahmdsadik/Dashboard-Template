@@ -296,13 +296,9 @@ body {
 }
 /* End Quick Draft Widget */
 /* Start Yearly Targets Widget */
-.yearly-targets {
-}
 .yearly-targets .targets {
   display: flex;
   flex-direction: column;
-}
-.yearly-targets .targets .target:not(:last-child) {
 }
 .yearly-targets .targets .target .icon {
   flex-basis: 80px;
@@ -399,13 +395,8 @@ body {
 
 /* End Yearly Targets Widget */
 /* Start Tickets Statistics Widget*/
-.tickets-statistics {
-}
 .tickets-statistics .statistics {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-}
-.tickets-statistics .statistics .statistic {
-  /* text-align: center; */
 }
 .tickets-statistics .statistics .statistic i {
   font-size: 25px;
@@ -424,11 +415,9 @@ body {
 }
 /* End Tickets Statistics Widget*/
 /* Start Latest News Widget */
-.latest-new {
-}
 .latest-news .new:not(:last-child) {
   padding-bottom: 20px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
 }
 @media (max-width: 767px) {
   .latest-news .new,
@@ -455,7 +444,7 @@ body {
 /* Start Latest Tasks Widget */
 .lastest-tasks .task:not(:last-child) {
   padding-bottom: 20px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
 }
 .lastest-tasks .task:nth-child(4) {
   opacity: 0.33;
@@ -475,12 +464,58 @@ body {
   }
 }
 /* End Latest Tasks Widget */
-/*  */
-.top-search-items {
+/* Start Latest Uploads Widget */
+.latest-upload .upload img {
+  width: 40px;
 }
-.top-search-items {
+.latest-upload .upload:not(:last-child) {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
 }
-.top-search-items .data .count {
-  /* padding: 5px 10px; */
+/* End Latest Uploads Widget */
+/* Start Last Project Progress */
+.last-project-progress .content {
+  border-left: 2px solid var(--blue-color);
 }
-/*  */
+@media (max-width: 767px) {
+  .last-project-progress .content > span:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  .last-project-progress .content > span {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+.last-project-progress .content > span::after,
+.last-project-progress .content > span::before {
+  content: "";
+  position: absolute;
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.last-project-progress .content > span::after {
+  left: -45px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+}
+.last-project-progress .content > span::before {
+  background-color: var(--blue-color);
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  left: -42px;
+  border: 2px solid white;
+  z-index: 1;
+}
+.last-project-progress .content > span:nth-last-child(2)::before {
+  background-color: #b3d6ff;
+}
+.last-project-progress .content > span:last-child::before {
+  background-color: white;
+}
+/* End Last Project Progress */

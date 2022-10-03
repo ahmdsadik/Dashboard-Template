@@ -90,6 +90,9 @@
 .mt-20 {
   margin-top: 20px;
 }
+.mt-30 {
+  margin-top: 30px;
+}
 .mr-10 {
   margin-right: 10px;
 }
@@ -104,6 +107,18 @@
 }
 .mb-30 {
   margin-bottom: 30px;
+}
+.ml-15 {
+  margin-left: 15px;
+}
+.ml-20 {
+  margin-left: 20px;
+}
+.ml-30 {
+  margin-left: 30px;
+}
+.ml-40 {
+  margin-left: 40px;
 }
 /* End Padding + Margin */
 /* Start background Color */
