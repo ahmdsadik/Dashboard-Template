@@ -473,7 +473,7 @@ body {
   border-bottom: 1px solid #eee;
 }
 /* End Latest Uploads Widget */
-/* Start Last Project Progress */
+/* Start Last Project Progress Widget */
 .last-project-progress .content {
   border-left: 2px solid var(--blue-color);
 }
@@ -499,7 +499,7 @@ body {
 }
 .last-project-progress .content > span::after {
   left: -45px;
-  top: 0;
+  top: -4px;
   width: 30px;
   height: 30px;
 }
@@ -507,7 +507,7 @@ body {
   background-color: var(--blue-color);
   width: 20px;
   height: 20px;
-  top: 3px;
+  top: -1px;
   left: -42px;
   border: 2px solid white;
   z-index: 1;
@@ -518,4 +518,75 @@ body {
 .last-project-progress .content > span:last-child::before {
   background-color: white;
 }
-/* End Last Project Progress */
+.last-project-progress .img {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+}
+.last-project-progress .img img {
+  width: 150px;
+  opacity: 0.19;
+}
+@media (max-width: 767px) {
+  .last-project-progress .img {
+    display: none;
+  }
+}
+/* End Last Project Progress Widget */
+/* Start Reminders Widget */
+.reminders .reminder {
+  padding-left: 20px;
+  border-left: 2px solid;
+}
+.reminders .reminder:first-of-type {
+  border-color: var(--blue-color);
+}
+.reminders .reminder:nth-of-type(2) {
+  border-color: var(--green-color);
+}
+.reminders .reminder:nth-of-type(3) {
+  border-color: var(--orange-color);
+}
+.reminders .reminder:nth-of-type(4) {
+  border-color: var(--red-color);
+}
+.reminders .reminder::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: -35px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.reminders .reminder:first-of-type::before {
+  background-color: var(--blue-color);
+}
+.reminders .reminder:nth-of-type(2)::before {
+  background-color: var(--green-color);
+}
+.reminders .reminder:nth-of-type(3)::before {
+  background-color: var(--orange-color);
+}
+.reminders .reminder:nth-of-type(4)::before {
+  background-color: var(--red-color);
+}
+@media (max-width: 767px) {
+  .reminders .reminder h4 {
+    width: 100%;
+    font-size: 14px;
+  }
+  .reminders .reminder span {
+    font-size: 12px;
+  }
+}
+/* End Reminders Widget */
