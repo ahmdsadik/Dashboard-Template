@@ -260,8 +260,6 @@ body {
 }
 /* End Welcome */
 /* Start Quick Draft Widget */
-.draft input.title {
-}
 .draft textarea {
   resize: none;
   height: 170px;
