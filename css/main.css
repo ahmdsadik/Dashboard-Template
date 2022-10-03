@@ -2,10 +2,10 @@
 :root {
   --blue-color: #0075ff;
   --blue-alt-color: #0d69d5;
-  ---orange-color: #f59e0b;
+  --orange-color: #f59e0b;
   --green-color: #22c55e;
-  ---red-color: #f44336;
-  ---grey-color: #888;
+  --red-color: #f44336;
+  --grey-color: #888;
 }
 /* End Variables */
 /* Start Global */
@@ -137,7 +137,7 @@ body {
   position: absolute;
   font-weight: 900;
   font-size: 14px;
-  color: var(---grey-color);
+  color: var(--grey-color);
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
@@ -167,7 +167,7 @@ body {
   position: absolute;
   width: 8px;
   height: 8px;
-  background: var(---red-color);
+  background: var(--red-color);
   top: -5px;
   right: 7px;
   border-radius: 50%;
@@ -258,6 +258,12 @@ body {
 .welcome .visit:hover {
   background-color: var(--blue-alt-color);
 }
+@media (max-width: 767px) {
+  .welcome .visit {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 /* End Welcome */
 /* Start Quick Draft Widget */
 .draft textarea {
@@ -281,4 +287,113 @@ body {
 .draft input.sub:hover {
   background-color: var(--blue-alt-color);
 }
+@media (max-width: 767px) {
+  .draft input.sub {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 /* End Quick Draft Widget */
+/* Start Yearly Targets Widget */
+.yearly-targets {
+}
+.yearly-targets .targets {
+  display: flex;
+  flex-direction: column;
+}
+.yearly-targets .targets .target:not(:last-child) {
+}
+.yearly-targets .targets .target .icon {
+  flex-basis: 80px;
+  height: 80px;
+}
+.yearly-targets .targets .target:nth-of-type(1) .icon {
+  color: var(--blue-color);
+  background-color: #cce3ff;
+}
+.yearly-targets .targets .target:nth-of-type(2) .icon {
+  color: var(--orange-color);
+  background-color: #fdecce;
+}
+.yearly-targets .targets .target:nth-of-type(3) .icon {
+  color: var(--green-color);
+  background-color: #d3f3df;
+}
+.yearly-targets .targets .target .data {
+  flex: 1;
+}
+.yearly-targets .targets .target .data .prog {
+  height: 3px;
+}
+.yearly-targets .targets .target:nth-of-type(1) .data .prog {
+  background-color: #cce3ff;
+}
+.yearly-targets .targets .target:nth-of-type(2) .data .prog {
+  background-color: #fdecce;
+}
+.yearly-targets .targets .target:nth-of-type(3) .data .prog {
+  background-color: #d3f3df;
+}
+.yearly-targets .targets .target .data .prog span {
+  height: 100%;
+  display: block;
+  position: relative;
+}
+.yearly-targets .targets .target:nth-of-type(1) .data .prog span {
+  background-color: var(--blue-color);
+}
+.yearly-targets .targets .target:nth-of-type(2) .data .prog span {
+  background-color: var(--orange-color);
+}
+.yearly-targets .targets .target:nth-of-type(3) .data .prog span {
+  background-color: var(--green-color);
+}
+.yearly-targets .targets .target .data .prog span::after,
+.yearly-targets .targets .target .data .prog span::before {
+  position: absolute;
+}
+.yearly-targets .targets .target .data .prog span::after {
+  content: attr(prog);
+  background: var(--blue-color);
+  width: 30px;
+  height: 14px;
+  right: -17px;
+  top: -40px;
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.yearly-targets .targets .target .data .prog span::before {
+  content: "";
+  right: -8px;
+  top: -20px;
+  width: 0px;
+  height: 0px;
+  border: 10px solid;
+}
+.yearly-targets .targets .target:nth-of-type(1) .data .prog span::after {
+  background: var(--blue-color);
+}
+.yearly-targets .targets .target:nth-of-type(2) .data .prog span::after {
+  background: var(--orange-color);
+}
+.yearly-targets .targets .target:nth-of-type(3) .data .prog span::after {
+  background: var(--green-color);
+}
+.yearly-targets .targets .target:nth-of-type(1) .data .prog span::before {
+  border-color: var(--blue-color) transparent transparent transparent;
+}
+.yearly-targets .targets .target:nth-of-type(2) .data .prog span::before {
+  border-color: var(--orange-color) transparent transparent transparent;
+}
+.yearly-targets .targets .target:nth-of-type(3) .data .prog span::before {
+  border-color: var(--green-color) transparent transparent transparent;
+}
+
+/* End Yearly Targets Widget */
