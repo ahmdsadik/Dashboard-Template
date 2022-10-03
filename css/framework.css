@@ -105,6 +105,9 @@
 .border {
   border: 1px solid #ccc;
 }
+.no-border {
+  border: none;
+}
 /* End Border */
 /* Start Font Position + Color */
 .txt-c {
@@ -169,12 +172,15 @@
   -o-border-radius: 50%;
 }
 .a-left {
-  margin: auto 0 0 0;
+  margin: 0 auto 15px  15px;
 }
 .a-right {
-  margin: 0 0 0 auto;
+  margin: 0 15px 15px auto;
 }
 .a-cnt {
   margin: 0 auto;
+}
+.sm-btn{
+  padding: 5px 10px;
 }
 /* End Component */
