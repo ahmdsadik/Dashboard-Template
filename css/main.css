@@ -131,6 +131,9 @@ body {
 }
 /* End Sidebar */
 /* Start Content */
+.page .whole-content {
+  overflow: hidden;
+}
 .content .head .search::before {
   font-family: "Font Awesome 6 Free";
   content: "\f002";
@@ -162,6 +165,9 @@ body {
 .content .head .search input:focus::placeholder {
   opacity: 0;
 }
+.content .head .icons .notification {
+  cursor: pointer;
+}
 .content .head .icons .notification::before {
   content: "";
   position: absolute;
@@ -175,6 +181,14 @@ body {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+.icons .notification:hover,
+.icons img:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
 .content h1 {
   margin: 20px 20px 40px;
@@ -335,6 +349,11 @@ body {
   height: 100%;
   display: block;
   position: relative;
+  transition: width 3s;
+  -webkit-transition: width 3s;
+  -moz-transition: width 3s;
+  -ms-transition: width 3s;
+  -o-transition: width 3s;
 }
 .yearly-targets .targets .target:nth-of-type(1) .data .prog span {
   background-color: var(--blue-color);
@@ -350,7 +369,7 @@ body {
   position: absolute;
 }
 .yearly-targets .targets .target .data .prog span::after {
-  content: attr(prog);
+  content: attr(data-width);
   background: var(--blue-color);
   width: 30px;
   height: 14px;
@@ -446,10 +465,10 @@ body {
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
 }
-.lastest-tasks .task:nth-child(4) {
+.lastest-tasks .task.deleted {
   opacity: 0.33;
 }
-.lastest-tasks .task:nth-child(4) .info {
+.lastest-tasks .task.deleted .info {
   text-decoration: line-through;
 }
 .lastest-tasks .task i {
@@ -513,7 +532,8 @@ body {
   z-index: 1;
 }
 .last-project-progress .content > span:nth-last-child(2)::before {
-  background-color: #b3d6ff;
+  animation: change-background 1s infinite;
+  -webkit-animation: change-background 2s linear infinite;
 }
 .last-project-progress .content > span:last-child::before {
   background-color: white;
@@ -650,7 +670,7 @@ body {
   color: #ff0000;
 }
 .social-stats .youtube .info a {
-  background-color: #1da1f2;
+  background-color: #ff0000;
 }
 .social-stats .linkedin .icon {
   background-color: #0077b5;
@@ -670,3 +690,58 @@ body {
   }
 }
 /* End Social Media Stats widget */
+/* Start Projects */
+.projects .content {
+  overflow-x: auto;
+}
+.projects table {
+  border-spacing: 0;
+  border-color: #eee;
+  min-width: 1000px;
+}
+.projects td {
+  border: 1px solid #eee;
+  padding: 15px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.projects tbody .sm-btn {
+  font-size: 13px;
+}
+@media (max-width: 767px) {
+  .projects table .sm-btn {
+    margin: 0 auto;
+  }
+}
+.projects tbody tr:hover td {
+  background-color: #faf7f7;
+}
+.projects .team img:not(:first-child) {
+  margin-left: -16px;
+}
+.projects table .pending {
+  background-color: var(--orange-color);
+}
+.projects table .in-progress {
+  background-color: var(--blue-color);
+}
+.projects table .completed {
+  background-color: var(--green-color);
+}
+.projects table .rejected {
+  background-color: var(--red-color);
+}
+/* End Projects */
+/* Start Animation */
+@keyframes change-background {
+  0% {
+    background-color: var(--blue-color);
+  }
+  100% {
+    background-color: #b3d6ff;
+  }
+}
+/* End Animation */

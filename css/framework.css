@@ -96,6 +96,9 @@
 .mr-10 {
   margin-right: 10px;
 }
+.mr-15 {
+  margin-right: 10px;
+}
 .mb-5 {
   margin-bottom: 5px;
 }
@@ -167,6 +170,9 @@
 .fs-14 {
   font-size: 14px;
 }
+.fs-15 {
+  font-size: 15px;
+}
 .fs-20 {
   font-size: 20px;
 }
@@ -221,6 +227,15 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+.sm-white-border {
+  width: 32px;
+  border: 2px solid white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
 .white-round-img {
   width: 60px;
   border: 5px solid white;
@@ -240,6 +255,6 @@
   margin: 0 auto;
 }
 .sm-btn {
-  padding: 5px 10px;
+  padding: 5px 5px;
 }
 /* End Component */
