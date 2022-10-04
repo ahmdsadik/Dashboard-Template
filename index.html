@@ -73,7 +73,7 @@
           </li>
         </ul>
       </div>
-      <div class="content w-full">
+      <div class="content whole-content w-full">
         <!-- Start Head -->
         <div class="head bg-white p-15 flex-between">
           <div class="search p-ralative">
@@ -85,7 +85,7 @@
           </div>
           <div class="icons d-flex align-center">
             <span class="p-ralative notification">
-              <i class="fa-regular fa-bell fa-lg mr-10"></i>
+              <i class="fa-regular fa-bell fa-lg mr-15"></i>
             </span>
             <img class="w-32" src="imgs/avatar.png" alt="" />
           </div>
@@ -160,7 +160,7 @@
                   <span class="c-grey fs-14">Money</span>
                   <span class="bold">$20.000</span>
                   <div class="prog">
-                    <span style="width: 80%" prog="80%"></span>
+                    <span style="width: 0%" data-width="80%"></span>
                   </div>
                 </div>
               </div>
@@ -172,7 +172,7 @@
                   <span class="c-grey fs-14">Projects</span>
                   <span class="bold">24</span>
                   <div class="prog">
-                    <span style="width: 55%" prog="55%"></span>
+                    <span style="width: 0%" data-width="55%"></span>
                   </div>
                 </div>
               </div>
@@ -184,7 +184,7 @@
                   <span class="c-grey fs-14">Team</span>
                   <span class="bold">12</span>
                   <div class="prog">
-                    <span style="width: 75%" prog="75%"></span>
+                    <span style="width: 0%" data-width="75%"></span>
                   </div>
                 </div>
               </div>
@@ -309,7 +309,7 @@
                 </div>
                 <i class="fa-regular fa-trash-can"></i>
               </div>
-              <div class="task d-flex mt-20 align-center space-between">
+              <div class="task deleted d-flex mt-20 align-center space-between">
                 <div class="info">
                   <h4 class="mb-5">Attend The Meeting</h4>
                   <span class="c-grey"
@@ -563,7 +563,7 @@
                   <i class="fa-brands fa-linkedin"></i>
                 </div>
                 <div class="info p-20 d-flex flex-1 space-between">
-                  <span class="d-flex  align-center">70k Followers</span>
+                  <span class="d-flex align-center">70k Followers</span>
                   <a class="sm-btn fs-14 rad-6 c-white" href="/">Follow</a>
                 </div>
               </div>
@@ -571,7 +571,192 @@
           </div>
           <!-- End Social Media Stats widget -->
         </div>
+        <!-- Start Projects -->
+        <div class="projects p-20 m-20 rad-10 bg-white">
+          <h2 class="mb-20">Projects</h2>
+          <div class="content">
+            <table class="fs-15 w-full">
+              <thead class="bg-eee">
+                <tr class="bold">
+                  <td>Name</td>
+                  <td>Finish Date</td>
+                  <td>Client</td>
+                  <td>Price</td>
+                  <td>Team</td>
+                  <td>Status</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ministry Wikipedia</td>
+                  <td>10 May 2022</td>
+                  <td>Ministry</td>
+                  <td>$5300</td>
+                  <td class="team">
+                    <img
+                      class="sm-white-border"
+                      src="imgs/team-01.png"
+                      alt=""
+                    />
+                    <img
+                      class="sm-white-border"
+                      src="imgs/team-02.png"
+                      alt=""
+                    />
+                    <img
+                      class="sm-white-border"
+                      src="imgs/team-03.png"
+                      alt=""
+                    />
+                    <img
+                      class="sm-white-border"
+                      src="imgs/team-04.png"
+                      alt=""
+                    />
+                  </td>
+                  <td>
+                    <div class="pending rad-6 fs-14 c-white sm-btn w-fit">
+                      Pending
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Elzero Shop</td>
+                  <td>10 Oct 2021</td>
+                  <td>Elzero Company</td>
+                  <td>$1500</td>
+                  <td class="team">
+                    <img
+                      class="sm-white-border"
+                      src="imgs/team-01.png"
+                      alt=""
+                    />
+                    <img
+                      class="sm-white-border"
+                      src="imgs/team-02.png"
+                      alt=""
+                    />
+                    <img
+                      class="sm-white-border"
+                      src="imgs/team-03.png"
+                      alt=""
+                    />
+                  </td>
+                  <td>
+                    <div class="in-progress rad-6 fs-14 c-white sm-btn w-fit">
+                      In Progress
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Bouba App</td>
+                  <td>05 Sep 2021</td>
+                  <td>Bouba</td>
+                  <td>$800</td>
+                  <td class="team">
+                    <img
+                      class="sm-white-border"
+                      src="imgs/team-01.png"
+                      alt=""
+                    />
+                    <img
+                      class="sm-white-border"
+                      src="imgs/team-02.png"
+                      alt=""
+                    />
+                  </td>
+                  <td>
+                    <div class="completed rad-6 sm-btn fs-14 c-white w-fit">
+                      Completed
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mahmoud Website</td>
+                  <td>22 May 2021</td>
+                  <td>Mahmoud</td>
+                  <td>$600</td>
+                  <td class="team">
+                    <img
+                      class="sm-white-border"
+                      src="imgs/team-01.png"
+                      alt=""
+                    />
+                    <img
+                      class="sm-white-border"
+                      src="imgs/team-02.png"
+                      alt=""
+                    />
+                  </td>
+                  <td>
+                    <div class="completed rad-6 sm-btn fs-14 c-white w-fit">
+                      Completed
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Sayed Website</td>
+                  <td>24 May 2021</td>
+                  <td>Sayed</td>
+                  <td>$300</td>
+                  <td class="team">
+                    <img
+                      class="sm-white-border"
+                      src="imgs/team-01.png"
+                      alt=""
+                    />
+                    <img
+                      class="sm-white-border"
+                      src="imgs/team-02.png"
+                      alt=""
+                    />
+                  </td>
+                  <td>
+                    <div class="rejected rad-6 sm-btn fs-14 c-white w-fit">
+                      Rejected
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Arena Application</td>
+                  <td>01 Mar 2021</td>
+                  <td>Arena Company</td>
+                  <td>$2600</td>
+                  <td class="team">
+                    <img
+                      class="sm-white-border"
+                      src="imgs/team-01.png"
+                      alt=""
+                    />
+                    <img
+                      class="sm-white-border"
+                      src="imgs/team-02.png"
+                      alt=""
+                    />
+                    <img
+                      class="sm-white-border"
+                      src="imgs/team-03.png"
+                      alt=""
+                    />
+                    <img
+                      class="sm-white-border"
+                      src="imgs/team-04.png"
+                      alt=""
+                    />
+                  </td>
+                  <td>
+                    <div class="completed rad-6 sm-btn fs-14 c-white w-fit">
+                      Completed
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- End Projects -->
       </div>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
