@@ -8,7 +8,7 @@
   --grey-color: #888;
 }
 /* End Variables */
-/* Start Global */
+/* Start Global Rules */
 * {
   margin: 0;
   padding: 0;
@@ -48,12 +48,11 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--blue-alt-color);
 }
-/* End Global */
+/* End Global Rules */
 .page {
   background-color: #f1f5f9;
   min-height: 100vh;
 }
-
 /* Start Sidebar */
 .sidebar {
   width: 250px;
@@ -165,7 +164,8 @@ body {
 .content .head .search input:focus::placeholder {
   opacity: 0;
 }
-.content .head .icons .notification {
+.content .head .icons .notification,
+.icons img:hover {
   cursor: pointer;
 }
 .content .head .icons .notification::before {
