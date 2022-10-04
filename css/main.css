@@ -165,7 +165,8 @@ body {
 .content .head .search input:focus::placeholder {
   opacity: 0;
 }
-.content .head .icons .notification {
+.content .head .icons .notification,
+.icons img:hover {
   cursor: pointer;
 }
 .content .head .icons .notification::before {
