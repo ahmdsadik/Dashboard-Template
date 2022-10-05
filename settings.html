@@ -18,8 +18,9 @@
   </head>
   <body>
     <div class="page d-flex">
-      <div class="sidebar bg-white p-20 p-ralative">
-        <h3 class="mt-0 txt-c p-ralative">Elzero</h3>
+      <!-- Start Sidebar -->
+      <div class="sidebar bg-white p-20 p-relative">
+        <h3 class="mt-0 txt-c p-relative">Elzero</h3>
         <ul>
           <li>
             <a
@@ -73,10 +74,11 @@
           </li>
         </ul>
       </div>
+      <!-- End Sidebar -->
       <div class="content whole-content w-full">
         <!-- Start Head -->
         <div class="head bg-white p-15 flex-between">
-          <div class="search p-ralative">
+          <div class="search p-relative">
             <input
               class="rad-10 fs-14 border p-10"
               type="search"
@@ -84,18 +86,20 @@
             />
           </div>
           <div class="icons d-flex align-center">
-            <span class="p-ralative notification">
+            <span class="p-relative notification">
               <i class="fa-regular fa-bell fa-lg mr-15"></i>
             </span>
             <img class="w-32" src="imgs/avatar.png" alt="" />
           </div>
         </div>
         <!-- End Head -->
-
-        <h1 class="p-ralative">Settings</h1>
+        <!-- Start Page Content -->
+        <h1 class="p-relative">Settings</h1>
         <div class="wrapper d-grid gap-20">
           <!-- Start Site Control -->
-          <div class="site-control p-20 rad-10 block-mobile bg-white">
+          <div
+            class="site-control p-relative p-20 rad-10 block-mobile bg-white"
+          >
             <h2 class="mb-15 txt-c-mobile">Site Control</h2>
             <span class="fs-15 d-block c-grey mb-20"
               >Control The Website If There Is Maintenance</span
@@ -207,7 +211,7 @@
             <span class="fs-15 d-block c-grey mb-20"
               >Social Media Information</span
             >
-            <div class="inp p-ralative d-flex">
+            <div class="inp p-relative d-flex">
               <i class="fa-brands fa-twitter border c-grey"></i>
               <input
                 type="text"
@@ -216,7 +220,7 @@
                 readonly
               />
             </div>
-            <div class="inp p-ralative d-flex">
+            <div class="inp p-relative d-flex">
               <i class="fa-brands fa-facebook-f border c-grey"></i>
               <input
                 type="text"
@@ -225,7 +229,7 @@
                 readonly
               />
             </div>
-            <div class="inp p-ralative d-flex">
+            <div class="inp p-relative d-flex">
               <i class="fa-brands fa-linkedin border c-grey"></i>
               <input
                 type="text"
@@ -234,7 +238,7 @@
                 readonly
               />
             </div>
-            <div class="inp p-ralative d-flex">
+            <div class="inp p-relative d-flex">
               <i class="fa-brands fa-youtube border c-grey"></i>
               <input
                 type="text"
@@ -355,7 +359,6 @@
                   <p>Megaman</p>
                 </label>
               </div>
-
               <input
                 type="radio"
                 class="custom-input"
@@ -368,7 +371,6 @@
                   <p>Zero</p>
                 </label>
               </div>
-
               <input
                 type="radio"
                 class="custom-input"
@@ -385,6 +387,7 @@
           </div>
           <!-- End Backup Manager -->
         </div>
+        <!-- End Page Content -->
       </div>
     </div>
     <script src="js/main.js"></script>

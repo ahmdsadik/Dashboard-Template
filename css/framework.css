@@ -64,8 +64,11 @@
 }
 /* End Box */
 /* Start Position */
-.p-ralative {
+.p-relative {
   position: relative;
+}
+.over-hidden {
+  overflow: hidden;
 }
 /* End Position */
 /* Start Padding + Margin */
@@ -512,3 +515,5 @@
   padding: 7px 10px;
 }
 /* End Component */
+/* Start Waves */
+/* End Waves */
