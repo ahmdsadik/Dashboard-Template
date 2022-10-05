@@ -810,14 +810,6 @@ input[type="checkbox"] + label {
   border-color: var(--blue-color);
   color: var(--blue-color);
 }
-/* .backup-manager .type-radio input[type="radio"]:checked + label {
-  color: var(--blue-color);
-}
-.backup-manager .type-radio input[type="radio"]:checked:target-within {
-  border-color: var(--blue-color);
-}
-.backup-manager .type-radio label {
-} */
 /* End Backup Manager */
 /* End Settings */
 
