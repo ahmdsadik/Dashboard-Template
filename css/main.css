@@ -31,6 +31,12 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
 }
+input[type="checkbox"],
+input[type="radio"],
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  cursor: pointer;
+}
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -135,9 +141,9 @@ body {
 }
 .content .head .search::before {
   font-family: "Font Awesome 6 Free";
+  font-weight: 900;
   content: "\f002";
   position: absolute;
-  font-weight: 900;
   font-size: 14px;
   color: var(--grey-color);
   left: 15px;
@@ -735,6 +741,86 @@ body {
   background-color: var(--red-color);
 }
 /* End Projects */
+/* Start Settings */
+
+/* Start Site Control */
+.site-control textarea {
+  resize: none;
+  height: 150px;
+}
+/* End Site Control */
+/* Start General Info */
+.general-info input:disabled {
+  cursor: no-drop;
+  background-color: #f0f4f8;
+}
+/* End General Info */
+/* Start Social Info */
+.social-info input {
+  padding-left: 10px;
+  height: 40px;
+  border-radius: 0 6px 6px 0;
+  -webkit-border-radius: 0 6px 6px 0;
+  -moz-border-radius: 0 6px 6px 0;
+  -ms-border-radius: 0 6px 6px 0;
+  -o-border-radius: 0 6px 6px 0;
+}
+.social-info .inp i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  -webkit-border-radius: 6px 0 0 6px;
+  -moz-border-radius: 6px 0 0 6px;
+  -ms-border-radius: 6px 0 0 6px;
+  -o-border-radius: 6px 0 0 6px;
+}
+.social-info .inp:focus-within i {
+  color: black;
+}
+/* End Social Info */
+/* Start Backup Manager */
+@media (max-width: 767px) {
+  .backup-manager {
+    margin-bottom: 15px;
+  }
+  .backup-manager .servers {
+    flex-direction: column;
+  }
+}
+.backup-manager .servers .server {
+  cursor: pointer;
+  border: 2px solid #eee;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.backup-manager .servers .server:hover {
+  border-color: #ccc;
+}
+.backup-manager .servers .server label {
+  cursor: pointer;
+}
+.backup-manager .servers input[type="radio"]:checked + .server {
+  border-color: var(--blue-color);
+  color: var(--blue-color);
+}
+/* .backup-manager .type-radio input[type="radio"]:checked + label {
+  color: var(--blue-color);
+}
+.backup-manager .type-radio input[type="radio"]:checked:target-within {
+  border-color: var(--blue-color);
+}
+.backup-manager .type-radio label {
+} */
+/* End Backup Manager */
+/* End Settings */
+
 /* Start Animation */
 @keyframes change-background {
   0% {
