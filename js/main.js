@@ -1,9 +1,19 @@
 window.onload = () => {
   let allProgressElement = document.querySelectorAll(
-    ".yearly-targets .prog span"
+    ".yearly-targets .prog .main-span"
   );
-  let section = document.querySelector(".our-skills");
   allProgressElement.forEach((ele) => {
-    ele.style.width = ele.dataset.width;
+    let prog = ele.firstElementChild.innerHTML.replace(/.$/, "");
+    var width = 0;
+    var id = setInterval(frame,40);
+    function frame() {
+      if (width >= prog) {
+        clearInterval(id);
+      } else {
+        width++;
+        ele.style.width = width + "%";
+        ele.firstElementChild.innerHTML = width * 1 + "%";
+      }
+    }
   });
 };

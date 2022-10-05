@@ -173,6 +173,15 @@
 .bg-blue {
   background-color: var(--blue-color);
 }
+.bg-red {
+  background-color: var(---red-color);
+}
+.bg-green {
+  background-color: var(--green-color);
+}
+.bg-orange {
+  background-color: var(---orange-color);
+}
 /* End background Color */
 /* Start Border */
 .rad-6 {
@@ -507,6 +516,9 @@
 }
 .a-cnt {
   margin: 0 auto;
+}
+.vsm-btn {
+  padding: 2px 5px;
 }
 .sm-btn {
   padding: 5px 5px;
