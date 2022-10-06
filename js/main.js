@@ -5,7 +5,7 @@ window.onload = () => {
   allProgressElement.forEach((ele) => {
     let prog = ele.firstElementChild.innerHTML.replace(/.$/, "");
     var width = 0;
-    var id = setInterval(frame,40);
+    var id = setInterval(frame, 40);
     function frame() {
       if (width >= prog) {
         clearInterval(id);
